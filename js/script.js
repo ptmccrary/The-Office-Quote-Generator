@@ -52,13 +52,18 @@ function getRandomQuote(){
   let randomNumber = Math.floor(Math.random() * quotes.length);
 
   return quotes[randomNumber];
-}
+};
 
 /***
  * `printQuote` function
 ***/
 
-
+function printQuote(){
+  let randomQuote = getRandomQuote();
+  let HTML = document.write(
+    `<p class="quote">${randomQuote.quote}</p><p class="source">${randomQuote.source}</p>`
+    );
+};
 
 /***
  * click event listener for the print quote button
