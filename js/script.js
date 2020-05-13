@@ -13,34 +13,34 @@ project 1 - A Random Quote Generator
 
 const quotes = [
   {
-    quote = ``,
-    source = ``,
-    citation = ``,
-    year = 
+    quote = `Sometimes I'll start a sentence and I don't even know where it's going. I just hope I find it along the way.`,
+    source = `Michael Scott`,
+    citation = `The Office`,
+    year = 2009
   },
   {
-    quote = ``,
-    source = ``,
-    citation = ``,
-    year = 
+    quote = `I talk a lot, so I've learned to just tune myself out...`,
+    source = `Kelly Kapoor`,
+    citation = `The Office`,
+    year = 2010
   },
   {
-    quote = ``,
-    source = ``,
-    citation = ``,
-    year = 
+    quote = `Oh, it is on, like a prawn who yawns at dawn.`,
+    source = `Andy Bernard`,
+    citation = `The Office`,
+    year = 2009
   },
   {
-    quote = ``,
-    source = ``,
-    citation = ``,
-    year = 
+    quote = `One day Michael came in and complained about a speed bump on the highway. I wonder who he ran over them.`,
+    source = `Jim Halpert`,
+    citation = `The Office`,
+    year = 2008
   },
   {
-    quote = ``,
-    source = ``,
-    citation = ``,
-    year = 
+    quote = `Whenever I'm about to do something, I think, 'Would an idiot do that?' and if they would, I do not do that thing.`,
+    source = `Dwight Schrute`,
+    citation = `The Office`,
+    year = 2008
   }
 ];
 
