@@ -7,10 +7,6 @@ project 1 - A Random Quote Generator
   // Check the "Project Resources" section of the project instructions
   // Reach out in your Slack community - https://treehouse-fsjs-102.slack.com/app_redirect?channel=chit-chat
 
-/*** 
- * `quotes` array 
-***/
-
 // Object data entry
 /***
   {
@@ -20,6 +16,12 @@ project 1 - A Random Quote Generator
     year: ,
     tag: `humor`
   },
+***/
+
+/*** 
+ * Variable quotes
+ * Holds array of objects
+ * Each object has the data to create a quote with citation
 ***/
 
 const quotes = [
@@ -118,7 +120,9 @@ const quotes = [
 ];
 
 /***
- * `getRandomQuote` function
+ * Creates getRandomQuote() function
+ * function generates random number from 0 to array length
+ * returns randomNumber
 ***/
 
 function getRandomQuote(){
@@ -128,7 +132,10 @@ function getRandomQuote(){
 };
 
 /***
- * `printQuote` function
+ * Creates printQuote() function
+ * Stores the chosen random in quotes array in randomQuote
+ * Creates and stores string of HTML code in HTML variable
+ * Checks for a citation + year + tag and adds that data to the HTML string
 ***/
 
 function printQuote(){
@@ -139,6 +146,8 @@ function printQuote(){
     HTML += `<span class='citation'>${randomQuote.citation}</span> `;
   } if(randomQuote.year){
     HTML += `<span class='year'>${randomQuote.year}</span>`;
+  } if(randomQuote.tag){
+    HTML += `<span class='tag'>${randomQuote.tag}</span>`;
   }
 
   HTML += `</p>`;
