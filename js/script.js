@@ -155,8 +155,26 @@ function printQuote(){
 };
 
 /***
+ * Creates randomBgColor() function
+ * Generates random number in red, green, blue variable from 0 - 256
+ * Stores random rgb CSS attribute
+ * Returns .body{background: bgColor} in CSS
+***/
+
+function randomBgColor(){
+  let red = Math.floor(Math.random() * 256);
+  let green = Math.floor(Math.random() * 256);
+  let blue = Math.floor(Math.random() * 256);
+  let bgColor = `rgb(${red}, ${green}, ${blue})`;
+
+  return document.body.style.background = bgColor;
+};
+
+document.getElementById('load').addEventListener("click", randomBgColor, false);
+
+/***
  * click event listener for the print quote button
  * DO NOT CHANGE THE CODE BELOW!!
 ***/
 
-document.getElementById('load-quote').addEventListener("click", printQuote, false);
+document.getElementById('load').addEventListener("click", printQuote, false);
