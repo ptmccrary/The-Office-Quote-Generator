@@ -60,9 +60,16 @@ function getRandomQuote(){
 
 function printQuote(){
   let randomQuote = getRandomQuote();
-  let HTML = document.write(
-    `<p class="quote">${randomQuote.quote}</p><p class="source">${randomQuote.source}</p>`
-    );
+  let HTML = `<p class='quote'>${randomQuote.quote}</p><p class='source'>${randomQuote.source} `;
+  
+  if(randomQuote.citation){
+    HTML += `<span class='citation'>${randomQuote.citation}</span> `;
+  } if(randomQuote.year){
+    HTML += `<span class='year'>${randomQuote.year}</span>`;
+  }
+
+  HTML += `</p>`;
+  return document.getElementById('quote-box').innerHTML = HTML; 
 };
 
 /***
