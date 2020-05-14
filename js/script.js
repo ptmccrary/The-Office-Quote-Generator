@@ -151,7 +151,9 @@ function printQuote(){
   }
 
   HTML += `</p>`;
-  return document.getElementById('quote-box').innerHTML = HTML; 
+  randomBgColor();
+
+  return document.getElementById('quote-box').innerHTML = HTML;
 };
 
 /***
@@ -170,11 +172,14 @@ function randomBgColor(){
   return document.body.style.background = bgColor;
 };
 
-document.getElementById('load').addEventListener("click", randomBgColor, false);
+document.getElementById('load').addEventListener('click', randomBgColor, false);
+
+
+setInterval(printQuote, 10000);
 
 /***
  * click event listener for the print quote button
  * DO NOT CHANGE THE CODE BELOW!!
 ***/
 
-document.getElementById('load').addEventListener("click", printQuote, false);
+document.getElementById('load').addEventListener('click', printQuote, false);
