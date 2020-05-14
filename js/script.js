@@ -145,7 +145,7 @@ function printQuote(){
   if(randomQuote.citation){
     HTML += `<span class='citation'>${randomQuote.citation}</span> `;
   } if(randomQuote.year){
-    HTML += `<span class='year'>${randomQuote.year}</span>`;
+    HTML += `<span class='year'>${randomQuote.year}</span> `;
   } if(randomQuote.tag){
     HTML += `<span class='tag'>${randomQuote.tag}</span>`;
   }
