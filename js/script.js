@@ -140,12 +140,12 @@ function getRandomQuote(){
 
 function printQuote(){
   let randomQuote = getRandomQuote();
-  let HTML = `<p class='quote'>${randomQuote.quote}</p><p class='source'>${randomQuote.source} `;
+  let HTML = `<p class='quote'>${randomQuote.quote}</p><p class='source'>${randomQuote.source}`;
   
   if(randomQuote.citation){
-    HTML += `<span class='citation'>${randomQuote.citation}</span> `;
+    HTML += `<span class='citation'>${randomQuote.citation}</span>`;
   } if(randomQuote.year){
-    HTML += `<span class='year'>${randomQuote.year}</span> `;
+    HTML += `<span class='year'>${randomQuote.year}</span>`;
   } if(randomQuote.tag){
     HTML += `<span class='tag'>${randomQuote.tag}</span>`;
   }
